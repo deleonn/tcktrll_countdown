@@ -1,10 +1,12 @@
 {
-  "name": "WhatsApp-Electron",
+  "name": "Ticketroll-Countdown-Electron",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "build-mac": "electron-packager . TicketROLL --platform=darwin --arch=x64 --version=1.0.0 --icon=assets/icons/mac/ticketroll.icns --overwrite",
+    "build-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/linux/1024x1024-isotipo-white.png --prune=true --out=release-builds"
   },
   "author": "",
   "license": "ISC",
